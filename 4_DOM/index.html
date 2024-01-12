@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .title{
+            font-size: 32px;
+        }
+        .active{
+            color: yellow;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">DOM</h1>
+    <hr>
+    <input id="brand" type="text" value="CyberSoft">
+    <hr>
+    <p id="content-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ducimus.
+    </p>
+    <p id="content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, eos.</p>
+    <hr>
+    <button onclick="showMessage()">
+        Show message
+    </button>
+    <hr>
+    <h1>Bai tap 1</h1>
+    <p id="content-3">Noi dung truoc khi thay doi</p>
+    <Button onclick="hiddenText()">Nhan em di</Button>
+    <hr>
+    <h1>Bai tap 2</h1>
+    <p id="content-4">Lorem ipsum dolor sit.</p>
+    <button onclick="toggleHide()">Toggle an hien</button>
+    <hr>
+    <h1>Bai tap 3</h1>
+    <button onclick="toggleOn()">Tat den</button>
+    <img id="img-1" src="./img/pic_bulboff.gif" alt="">
+    <button onclick="toggleOff()">Bat den</button>
+    <hr>
+    <h1>Bai tap 4</h1>
+    <div><input id="onOff" type="text" placeholder="text box" >
+        <button id="onOf">Button</button>
+    </div>
+    <button onclick="disable()" >CLick de disable input va output</button>
+    <hr>
+    <h1>Bai tap 5</h1>
+    <br>
+    <br>
+    <div>
+        <label for="">Tai khoan</label>
+        <input  type="text" name="" id="input-username">
+    </div>
+    <div>
+        <label for="">Mat khau</label>
+        <input type="text" name="" id="input-password">
+    </div>
+    <button onclick="login()">Dang nhap</button>
+    <div id="output-1" class="hide"></div>
+    <hr>
+
+    <div id="container">
+        <h3>Welcome</h3>
+    </div>
+    <hr>
+    <div class="mb-3 w-50">
+        <label class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" id="product-name" />
+      </div>
+      <div class="mb-3 w-50">
+        <label class="form-label">Giá sản phẩm</label>
+        <input type="text" class="form-control" id="product-price" />
+      </div>
+      <button class="btn btn-success mb-5" onclick="addProduct()">Thêm sản phẩm</button>
+      <button class="btn btn-success mb-5" onclick="addProduct2()">Thêm sản phẩm</button>
+      <table class="table w-50">
+        <thead>
+          <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+
+        </tbody>
+      </table>
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
